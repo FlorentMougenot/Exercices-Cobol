@@ -1,0 +1,27 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. descrip.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 LINE01.
+        05 EMPLOYEE-ID PIC 9(8) VALUE 59050287.
+        05 FIRST-NAME PIC X(16) VALUE "Solange".
+        05 LAST-NAME PIC X(16) VALUE "Oliveur".
+        05 JOB PIC X(24) VALUE "Mecanicien".
+        05 ZIPCODE PIC 9(5) VALUE 59008.
+        05 EMAIL PIC X(35) VALUE "Solange.Oliveur@pro.com".
+        05 SALARY PIC 9(8) VALUE 00120000.
+
+       01 LINE02.
+        05 EMPLOYEE-ID PIC 9(8) VALUE 69050243.
+        05 FIRST-NAME PIC X(16) VALUE "Matt".
+        05 LAST-NAME PIC X(16) VALUE "Ador".
+        05 JOB PIC X(24) VALUE "Gerant".
+        05 ZIPCODE PIC 9(5) VALUE 59008.
+        05 EMAIL PIC X(35) VALUE "Matt.Ador@pro.com".
+        05 SALARY PIC 9(8) VALUE 00505000.
+
+       PROCEDURE DIVISION.
+           DISPLAY LINE01.
+           DISPLAY LINE02.
+           STOP RUN.
