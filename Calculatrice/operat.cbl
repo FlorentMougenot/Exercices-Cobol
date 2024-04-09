@@ -10,21 +10,21 @@
 
       * Entrée des données par l'utilisateur
        PROCEDURE DIVISION.
-           DISPLAY "Entrez un premier entier :" SPACE WITH NO ADVANCING
-               ACCEPT NUM1
-           DISPLAY "Entrez un second entier : " SPACE WITH NO ADVANCING
-               ACCEPT NUM2
+           DISPLAY "Entrez un premier entier :" SPACE WITH NO ADVANCING.
+               ACCEPT NUM1.
+           DISPLAY "Entrez un second entier : " SPACE WITH NO ADVANCING.
+               ACCEPT NUM2.
 
       * Calcul et rendu de la somme
-               ADD NUM1 TO NUM2 GIVING RESULT
+               ADD NUM1 TO NUM2 GIVING RESULT.
                DISPLAY "La somme est égale à" SPACE RESULT.
       * Calcul et rendu de la soustraction
-               SUBTRACT NUM2 FROM NUM1 GIVING RESULT
+               SUBTRACT NUM2 FROM NUM1 GIVING RESULT.
                DISPLAY "La soustraction est égale à" SPACE RESULT.
       * Calcul et rendu de la multiplication
-               MULTIPLY NUM1 BY NUM2 GIVING RESULT
+               MULTIPLY NUM1 BY NUM2 GIVING RESULT.
                DISPLAY "La multiplication est égale à" SPACE RESULT.
       * Calcul et rendu de la division
-               DIVIDE NUM1 BY NUM2 GIVING RESULT
+               DIVIDE NUM1 BY NUM2 GIVING RESULT.
                DISPLAY "La division est égale à" SPACE RESULT.
 
