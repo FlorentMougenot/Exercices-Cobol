@@ -30,4 +30,49 @@
            DISPLAY "Cinquième entrée du tableau :" SPACE POKE-TABLE(5).
            DISPLAY "Dixième entrée du tableau :" SPACE POKE-TABLE(10).
 
+       DISPLAY "                                             ,-.".
+       DISPLAY "                                          _.|  '".
+       DISPLAY "                                        .'  | /".
+       DISPLAY "                                      ,'    |'".
+       DISPLAY "                                     /      /".
+       DISPLAY "                       _..----\'\'---.'     /".
+       DISPLAY " _.....---------...,-\'\'                  ,'".
+       DISPLAY " `-._  \\                                /".
+       DISPLAY "     `-.+_            __           ,--. .".
+       DISPLAY "          `-.._     .:  ).        (`--\ | \\".
+       DISPLAY "               7    | `\  |        \ ...   ".
+       DISPLAY "               |     `--'     '+\         ,\  / / /".
+       DISPLAY "               |   _...        .____     | |/    '\".
+       DISPLAY "          _.   |  .    `.  '--\    /      `./     j".
+       DISPLAY "         \\' `-.|  '     |   `.   /        /     /".
+       DISPLAY "         '     `-. `---\'      `-\         /     /".
+       DISPLAY "          \\       `.                  _,'     /".
+       DISPLAY "           \\        `                        .".
+       DISPLAY "            \\                                j".
+       DISPLAY "             \\                              /".
+       DISPLAY "              `.                           .".
+       DISPLAY "                +                          \\".
+       DISPLAY "                |                           L".
+       DISPLAY "                |                           |".
+       DISPLAY "                |  _ /,                     |".
+       DISPLAY "                | | L)'..                   |".
+       DISPLAY "                | .    | `                  |".
+       DISPLAY "                '  \\'   L                   '".
+       DISPLAY "                 \\  \\   |                  j".
+       DISPLAY "                  `. `__'                 /".
+       DISPLAY "                _,.--.---........__      /".
+       DISPLAY "               ---.,'---`         |   -j".
+       DISPLAY "                .-'  '....__      L    |".
+       DISPLAY "                \ --..    _,-'       \\ l||".
+       DISPLAY "                  ,-'  .....------. `||'".
+       DISPLAY "               _,'                /".
+       DISPLAY "             ,'                  /".
+       DISPLAY "            '---------+-        /".
+       DISPLAY "                     /         /".
+       DISPLAY "                   .'         /".
+       DISPLAY "                 .'          /".
+       DISPLAY "               ,'           /".
+       DISPLAY "             _'....--------".
+
+
            STOP RUN.
