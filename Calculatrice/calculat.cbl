@@ -4,20 +4,25 @@
        DATA DIVISION.
       * Saisie des variables
        WORKING-STORAGE SECTION.
-       01 WS-NUM1             PIC S9(5).
-       01 WS-NUM2             PIC S9(5).
-       01 WS-RESULT           PIC S9(10).
-       01 WS-QUEST            PIC X(300).
-       01 WS-OPERATOR         PIC X.
-       01 WS-OPERATION-TYPE   PIC X.
-       01 WS-PREVIOUS-RESULT  PIC S9(10).
-       01 WS-RES-TEMP         PIC Z(10).
-       01 WS-RES              PIC X(10) VALUE "VIDE".
-       01 WS-CONTINUE-FLAG    PIC X VALUE 'Y'.
+       01 WS-NUM1                  PIC S9(5).
+       01 WS-NUM2                  PIC S9(5).
+       01 WS-RESULT                PIC S9(10).
+       01 WS-QUEST                 PIC X(300).
+       01 WS-OPERATOR              PIC X.
+       01 WS-OPERATION-TYPE        PIC X.
+       01 WS-PREVIOUS-RESULT       PIC S9(10).
+       01 WS-RES-TEMP              PIC Z(10).
+       01 WS-RES                   PIC X(10) VALUE "VIDE".
+      * Variable non utilisé qui etait présente pour la partie
+      *affichage des calculs et résultats
+       01 WS-OPERATION-STRING      PIC X(30).
+       01 WS-CONTINUE-FLAG         PIC X VALUE 'Y'.
 
        PROCEDURE DIVISION.
       * Balise de boucle jusqu'à étape de sortie
            PERFORM UNTIL WS-CONTINUE-FLAG = 'N'
+           DISPLAY "--------------------------------------------------"
+           DISPLAY " "
            DISPLAY "Choisissez votre commande par son numéro"
            DISPLAY "La calculatrice garde la valeur précédente"
            DISPLAY "La valeur précédente est" SPACE WS-RES
@@ -61,22 +66,14 @@
                MOVE WS-PREVIOUS-RESULT TO WS-NUM1
            END-IF
 
-           DISPLAY "Entrez le symbole de l'opération (^ = au carré):"
+           DISPLAY "Entrez l'exposant:"
            SPACE WITH NO ADVANCING
-               ACCEPT WS-OPERATOR
+               ACCEPT WS-NUM2
 
-           EVALUATE WS-OPERATOR
-               WHEN '^' 
-                  MULTIPLY WS-NUM1 BY WS-NUM1 GIVING WS-RESULT
-      * Exception si on a affaire à un utilisateur qui ne sait pas 
-      * utiliser ses neurones atrophiés correctement et utiliser un des
-      * opérateurs proposés entre parenthèses
-               WHEN OTHER
-                  DISPLAY "Choisissez un des caractères proposés !"
-           END-EVALUATE    
+           COMPUTE WS-RESULT = WS-NUM1 ** WS-NUM2.
 
-           MOVE WS-RESULT TO WS-RES-TEMP
-           MOVE FUNCTION TRIM(WS-RES-TEMP) TO WS-RES
+           MOVE WS-RESULT TO WS-RES-TEMP.
+           MOVE FUNCTION TRIM(WS-RES-TEMP) TO WS-RES.
            DISPLAY "Le résultat est :"SPACE WS-RES.
            MOVE WS-RESULT TO WS-PREVIOUS-RESULT.
 
@@ -106,20 +103,25 @@
                   END-IF
       * Qui peut le plus, peut le moins, proverbe français
                WHEN '-'
-                  SUBTRACT WS-NUM2 FROM WS-NUM1 GIVING WS-RESULT
+                  COMPUTE WS-RESULT = WS-NUM1 - WS-NUM2
+            
+      *           SUBTRACT WS-NUM2 FROM WS-NUM1 GIVING WS-RESULT
       * Je crois, à mon étoile, elle est, le point de départ... LinkUp
                WHEN '*'
                   MULTIPLY WS-NUM1 BY WS-NUM2 GIVING WS-RESULT
       * Je connais un meilleur slasher que la série Halloween
                WHEN '/'
                   DIVIDE WS-NUM1 BY WS-NUM2 GIVING WS-RESULT
-      * Bis repetita de la ligne 95, cerveau, intelligence, etc...
+      * Exception si on a affaire à un utilisateur qui ne sait pas 
+      * utiliser ses neurones atrophiés correctement et utiliser un des
+      * opérateurs proposés entre parenthèses
                WHEN OTHER
                   DISPLAY "Choisissez un des caractères proposés !"
            END-EVALUATE
 
            MOVE WS-RESULT TO WS-RES-TEMP
            MOVE FUNCTION TRIM(WS-RES-TEMP) TO WS-RES
+           DISPLAY "Operation: " WS-OPERATION-STRING.
            DISPLAY "Le résultat est :"SPACE WS-RES.
            MOVE WS-RESULT TO WS-PREVIOUS-RESULT.
 
