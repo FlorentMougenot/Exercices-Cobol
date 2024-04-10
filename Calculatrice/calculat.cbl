@@ -52,7 +52,7 @@
       * Etape de sortie de la calculatrice
            DISPLAY "Voulez vous rester sur la calculatrice (Y/N)? "
            ACCEPT WS-CONTINUE-FLAG
-           END-PERFORM
+           END-PERFORM.
 
            STOP RUN.
 
@@ -64,11 +64,11 @@
                ACCEPT WS-NUM1
            ELSE
                MOVE WS-PREVIOUS-RESULT TO WS-NUM1
-           END-IF
+           END-IF.
 
            DISPLAY "Entrez l'exposant:"
-           SPACE WITH NO ADVANCING
-               ACCEPT WS-NUM2
+           SPACE WITH NO ADVANCING.
+               ACCEPT WS-NUM2.
 
            COMPUTE WS-RESULT = WS-NUM1 ** WS-NUM2.
 
@@ -117,10 +117,10 @@
       * opérateurs proposés entre parenthèses
                WHEN OTHER
                   DISPLAY "Choisissez un des caractères proposés !"
-           END-EVALUATE
+           END-EVALUATE.
 
-           MOVE WS-RESULT TO WS-RES-TEMP
-           MOVE FUNCTION TRIM(WS-RES-TEMP) TO WS-RES
+           MOVE WS-RESULT TO WS-RES-TEMP.
+           MOVE FUNCTION TRIM(WS-RES-TEMP) TO WS-RES.
            DISPLAY "Operation: " WS-OPERATION-STRING.
            DISPLAY "Le résultat est :"SPACE WS-RES.
            MOVE WS-RESULT TO WS-PREVIOUS-RESULT.
@@ -129,5 +129,5 @@
       * Il s'agit donc d'un hommage
        QUESTION SECTION.
            DISPLAY "Quelle est votre question ?" SPACE WITH NO ADVANCING
-               ACCEPT WS-QUEST
+               ACCEPT WS-QUEST.
            DISPLAY "Florian dit : La réponse est 42".
