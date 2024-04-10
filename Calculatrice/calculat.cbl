@@ -26,7 +26,7 @@
            DISPLAY "Choisissez votre commande par son numéro"
            DISPLAY "La calculatrice garde la valeur précédente"
            DISPLAY "La valeur précédente est" SPACE WS-RES
-           DISPLAY "1 - Opérations à un nombre de saisie"
+           DISPLAY "1 - Faire une puissance (pas Hercule, Stallone...)"
            DISPLAY "2 - Opérations à deux nombres de saisie"
            DISPLAY "3 - Posez une question au génie de la calculatrice"
            DISPLAY "4 - Réinitialiser la calculatrice"
