@@ -209,7 +209,7 @@
 
            IF MINE-COUNT IS EQUAL TO TOTAL-MINES THEN
                PERFORM PRINT-GAME
-               DISPLAY "YOU WIN!"
+               DISPLAY "C'est gagné !"
                MOVE 1 TO GAME-DONE
            END-IF.
 
