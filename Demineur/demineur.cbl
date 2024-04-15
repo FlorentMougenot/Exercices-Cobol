@@ -47,7 +47,7 @@
 
        01 SEED                             PIC S9(4) COMP.
        PROCEDURE DIVISION.
-      *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
        MAIN-PROCEDURE.
            DISPLAY "Taille du terrain:".
            ACCEPT PLAYFIELD-SIZE.
