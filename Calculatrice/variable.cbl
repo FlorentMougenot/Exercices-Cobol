@@ -1,0 +1,17 @@
+       FD BRAZIL
+           RECORD VARYING FROM 24 TO 32 CHARACTERS
+             DEPENDING ON data-name-bs
+             RECORDING MODE IS ?.
+
+       01 BRAZZIL
+           03 FORTALEZA     PIC XXX.
+           03 MANAUS      PIC X(15).
+           03 RECIFE PIC X(4).
+           03 JABOATAO REDEFINES RECIFE PIC 9(4).
+           03 PORTOALEGRE PIC X(10).
+           03 CAMPOGRANDE REDEFINES PORTOALEGRE PIC X OCCURS 10.
+
+       WORKING-STORAGE SECTION.
+       01 WS-RIODEJANEIRO PIC X(02).
+       01 WS-BELEM PIC 99.
+       
