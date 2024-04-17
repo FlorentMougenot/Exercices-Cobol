@@ -134,4 +134,4 @@
                IF DEPT-FOUND = 'N'
            DISPLAY "Département non trouvé" SPACE, REMPLOYE-AGENCE.
 
-           END PROGRAM employee.
+           STOP RUN.
