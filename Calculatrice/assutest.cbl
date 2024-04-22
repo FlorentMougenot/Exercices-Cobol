@@ -76,7 +76,9 @@
                    WRITE RAPPORT-RECORD-OUT FROM ASSURANCE-RECORD
                END-IF
            ADD 1 TO WS-COUNTER
+           
            END-PERFORM
+           DISPLAY "Rapport effectué"
 
            CLOSE ASSURANCES-FILE
            CLOSE RAPPORT-FILE
