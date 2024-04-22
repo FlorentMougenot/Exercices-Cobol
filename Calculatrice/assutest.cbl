@@ -4,10 +4,10 @@
        ENVIRONMENT DIVISION.
        INPUT-OUTPUT SECTION.
        FILE-CONTROL.
-      *LIEN AVEC LE TABLEAU DE DONNES EN LIGNE PAR LIGNE
+      * Fichier d'entrée
            SELECT ASSURANCES-FILE ASSIGN TO 'assurances.dat'
            ORGANIZATION IS LINE SEQUENTIAL.
-      *LIEN AVEC LE FICHIER DE SORTIE EN LIGNE PAR LIGNE
+      * Rapport de sortie
            SELECT RAPPORT-FILE ASSIGN TO 'rapport-assurances.dat'
            ORGANIZATION IS LINE SEQUENTIAL.
 
@@ -30,7 +30,7 @@
            05 FILLER                  PIC X(1) VALUE "*".
            05 MONTANT                 PIC X(9).
            05 FILLER                  PIC X(1) VALUE "*".
-      * OUVRE DES EMPLACEMENTS DE CARACTERES (CARACTERES SPECIAUX)
+      * Emplacement de caractères spéciaux
            05 MONNAIE                 PIC X(5).
 
        FD RAPPORT-FILE.
@@ -59,6 +59,7 @@
            OPEN INPUT ASSURANCES-FILE.
            OPEN OUTPUT RAPPORT-FILE.
                DISPLAY "Enregistrements 3 et 7 :"
+      * Boucle limitée car pas besoin des enregistrements post 7
            PERFORM UNTIL WS-COUNTER = 8
                READ ASSURANCES-FILE
            AT END DISPLAY "Fin du fichier" END-READ
