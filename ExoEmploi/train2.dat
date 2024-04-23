@@ -1,0 +1,46 @@
+Type de train: TGV Train grande vitesse   Gare de depart: PORTO              Depart: 21:33h   Durée: 20min   Arrets: 10   Arrivée: 17:33h
+Type de train: TGV Train grande vitesse   Gare de depart: MALAGA             Depart: 21:34h   Durée: 18min   Arrets: 06   Arrivée: 15:34h
+Type de train: TER Train regional         Gare de depart: MONS               Depart: 21:38h   Durée: 01min   Arrets: 00   Arrivée: 22:38h
+Type de train: TGV Train grande vitesse   Gare de depart: OSLO               Depart: 21:40h   Durée: 24min   Arrets: 07   Arrivée: 21:40h
+Type de train: TER Train regional         Gare de depart: DIEPPE             Depart: 21:41h   Durée: 01min   Arrets: 02   Arrivée: 22:41h
+Type de train: COR Voiture Corail         Gare de depart: GAND               Depart: 21:42h   Durée: 01min   Arrets: 03   Arrivée: 22:42h
+Type de train: TGV Train grande vitesse   Gare de depart: LISBONNE           Depart: 21:43h   Durée: 48min   Arrets: 10   Arrivée: 21:43h
+Type de train: TGV Train grande vitesse   Gare de depart: MADRID             Depart: 21:46h   Durée: 32min   Arrets: 10   Arrivée: 05:46h
+Type de train: TGV Train grande vitesse   Gare de depart: ALENCE             Depart: 21:48h   Durée: 15min   Arrets: 06   Arrivée: 12:48h
+Type de train: TGV Train grande vitesse   Gare de depart: GLASGOW            Depart: 22:00h   Durée: 20min   Arrets: 10   Arrivée: 18:00h
+Type de train: TGV Train grande vitesse   Gare de depart: LYON               Depart: 22:03h   Durée: 02min   Arrets: 00   Arrivée: 00:03h
+Type de train: TGV Train grande vitesse   Gare de depart: LILLE              Depart: 22:04h   Durée: 03min   Arrets: 04   Arrivée: 01:04h
+Type de train: TGV Train grande vitesse   Gare de depart: PARIS              Depart: 22:06h   Durée: 01min   Arrets: 00   Arrivée: 23:06h
+Type de train: TGV Train grande vitesse   Gare de depart: STRABOURG          Depart: 22:07h   Durée: 03min   Arrets: 01   Arrivée: 01:07h
+Type de train: TGV Train grande vitesse   Gare de depart: MARSEILLE          Depart: 22:12h   Durée: 05min   Arrets: 06   Arrivée: 03:12h
+Type de train: TGV Train grande vitesse   Gare de depart: LENS               Depart: 22:22h   Durée: 01min   Arrets: 01   Arrivée: 23:22h
+Type de train: TGV Train grande vitesse   Gare de depart: ARRAS              Depart: 22:26h   Durée: 01min   Arrets: 01   Arrivée: 23:26h
+Type de train: COR Voiture Corail         Gare de depart: BREST              Depart: 22:28h   Durée: 02min   Arrets: 03   Arrivée: 00:28h
+Type de train: TGV Train grande vitesse   Gare de depart: TOULOUSE           Depart: 22:33h   Durée: 07min   Arrets: 10   Arrivée: 05:33h
+Type de train: COR Voiture Corail         Gare de depart: ANGERS             Depart: 22:36h   Durée: 02min   Arrets: 02   Arrivée: 00:36h
+Type de train: TGV Train grande vitesse   Gare de depart: BRUXELLES          Depart: 22:44h   Durée: 01min   Arrets: 00   Arrivée: 23:44h
+Type de train: TGV Train grande vitesse   Gare de depart: LONDRES            Depart: 22:48h   Durée: 03min   Arrets: 00   Arrivée: 01:48h
+Type de train: TGV Train grande vitesse   Gare de depart: TOULON             Depart: 22:51h   Durée: 05min   Arrets: 09   Arrivée: 03:51h
+Type de train: TGV Train grande vitesse   Gare de depart: NICE               Depart: 22:52h   Durée: 07min   Arrets: 10   Arrivée: 05:52h
+Type de train: TGV Train grande vitesse   Gare de depart: CANNES             Depart: 22:57h   Durée: 06min   Arrets: 09   Arrivée: 04:57h
+Type de train: TGV Train grande vitesse   Gare de depart: ASTON              Depart: 23:06h   Durée: 05min   Arrets: 01   Arrivée: 04:06h
+Type de train: TGV Train grande vitesse   Gare de depart: SAINTE             Depart: 23:11h   Durée: 05min   Arrets: 03   Arrivée: 04:11h
+Type de train: TGV Train grande vitesse   Gare de depart: MENTON             Depart: 23:15h   Durée: 08min   Arrets: 03   Arrivée: 07:15h
+Type de train: TER Train regional         Gare de depart: GRENOBLE           Depart: 23:18h   Durée: 04min   Arrets: 07   Arrivée: 03:18h
+Type de train: COR Voiture Corail         Gare de depart: SAINTMALO          Depart: 23:24h   Durée: 03min   Arrets: 02   Arrivée: 02:24h
+Type de train: COR Voiture Corail         Gare de depart: LORIENT            Depart: 23:36h   Durée: 03min   Arrets: 03   Arrivée: 02:36h
+Type de train: TGV Train grande vitesse   Gare de depart: NANTES             Depart: 23:40h   Durée: 03min   Arrets: 05   Arrivée: 02:40h
+Type de train: TGV Train grande vitesse   Gare de depart: BERLIN             Depart: 23:43h   Durée: 05min   Arrets: 06   Arrivée: 04:43h
+Type de train: TER Train regional         Gare de depart: CHERBOURG          Depart: 23:46h   Durée: 03min   Arrets: 01   Arrivée: 02:46h
+Type de train: TGV Train grande vitesse   Gare de depart: PRAGUE             Depart: 23:51h   Durée: 20min   Arrets: 00   Arrivée: 19:51h
+Type de train: TER Train regional         Gare de depart: ANNECY             Depart: 00:01h   Durée: 05min   Arrets: 01   Arrivée: 05:01h
+Type de train: TGV Train grande vitesse   Gare de depart: GENEVE             Depart: 00:16h   Durée: 05min   Arrets: 00   Arrivée: 05:16h
+Type de train: TGV Train grande vitesse   Gare de depart: LAUSANNE           Depart: 00:21h   Durée: 05min   Arrets: 00   Arrivée: 05:21h
+Type de train: TGV Train grande vitesse   Gare de depart: BERNE              Depart: 00:23h   Durée: 06min   Arrets: 00   Arrivée: 06:23h
+Type de train: TGV Train grande vitesse   Gare de depart: SAINT GAL          Depart: 00:36h   Durée: 07min   Arrets: 00   Arrivée: 07:36h
+Type de train: TGV Train grande vitesse   Gare de depart: LUCERNE            Depart: 00:42h   Durée: 06min   Arrets: 00   Arrivée: 06:42h
+Type de train: TGV Train grande vitesse   Gare de depart: ROME               Depart: 00:48h   Durée: 15min   Arrets: 01   Arrivée: 15:48h
+Type de train: TGV Train grande vitesse   Gare de depart: VENISE             Depart: 00:56h   Durée: 08min   Arrets: 05   Arrivée: 08:56h
+Type de train: TGV Train grande vitesse   Gare de depart: VIENNE             Depart: 01:01h   Durée: 10min   Arrets: 01   Arrivée: 11:01h
+Type de train: TGV Train grande vitesse   Gare de depart: AMSTERDAM          Depart: 01:07h   Durée: 03min   Arrets: 01   Arrivée: 04:07h
+Type de train: TGV Train grande vitesse   Gare de depart: ANVERS             Depart: 01:17h   Durée: 03min   Arrets: 01   Arrivée: 04:17h
