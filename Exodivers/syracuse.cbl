@@ -29,5 +29,6 @@
            END-PERFORM
 
            DISPLAY "Nous avons atteint le chiffre 1 en" SPACE
-           STEP-COUNTER " étapes"
+           STEP-COUNTER " étapes avec comme nombre initial" SPACE
+           START-NUMBER
            STOP RUN.
