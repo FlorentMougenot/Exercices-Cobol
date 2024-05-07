@@ -227,9 +227,10 @@
                    PERFORM PRINT-GAME
                    DISPLAY "GAME OVER!"
                    MOVE 1 TO GAME-DONE
+                   STOP RUN
                END-IF
                PERFORM UNCOVER PLAYFIELD-SIZE TIMES
                PERFORM CHECK-WIN
            END-IF.
 
-       END PROGRAM demineur.
+           STOP RUN.
