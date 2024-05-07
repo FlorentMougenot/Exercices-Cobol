@@ -1,0 +1,22 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. pizzagrp.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 NUMBER-OF-GUESTS        PIC 9(03).
+       01 TOTAL-PIZZAS            PIC 9(05)V9(1) VALUE ZERO.
+       01 ROUNDED-PIZZAS          PIC 9(05).
+       01 ADJUSTED-PIZZAS         PIC 9(05)V9(1) VALUE ZERO.
+
+       PROCEDURE DIVISION.
+       BEGIN.
+           DISPLAY "Nombre de consommateurs:" SPACE
+           ACCEPT NUMBER-OF-GUESTS
+
+           COMPUTE TOTAL-PIZZAS = NUMBER-OF-GUESTS * 1.1
+           COMPUTE ADJUSTED-PIZZAS = TOTAL-PIZZAS + 0.9
+
+           MOVE FUNCTION INTEGER(ADJUSTED-PIZZAS) TO ROUNDED-PIZZAS
+
+           DISPLAY "Nombre de pizzas nécessaires: " ROUNDED-PIZZAS
+           STOP RUN.
