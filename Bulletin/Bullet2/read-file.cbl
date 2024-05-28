@@ -1,0 +1,36 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. read-file.
+
+       ENVIRONMENT DIVISION.
+       CONFIGURATION SECTION.
+       SPECIAL-NAMES.
+           DECIMAL-POINT IS COMMA.
+
+       DATA DIVISION.
+       FILE SECTION.
+       FD  F-INPUT
+           RECORD CONTAINS 2 TO 1000 CHARACTERS
+           RECORDING MODE IS V.
+
+       01  REC-F-INPUT-2       PIC 9(02).
+
+       01  REC-STUDENT.
+           03 R-S-KEY          PIC 9(02).
+           03 R-LASTNAME       PIC X(07).
+           03 R-FIRSTNAME      PIC X(06).
+           03 R-AGE            PIC 9(02).
+           66 R-NAME RENAMES R-LASTNAME THRU R-FIRSTNAME.
+
+       WORKING-STORAGE SECTION.
+       01  F-INPUT-STATUS       PIC X(02)   VALUE SPACE .
+           88 F-INPUT-STATUS-OK    VALUE '00'.
+           88 F-INPUT-STATUS-EOF   VALUE '10'.
+
+       PROCEDURE DIVISION.
+       2020-READ-FILE-START.
+           READ F-INPUT.
+           IF NOT F-INPUT-STATUS-OK
+               PERFORM 9000-TEST-STATUS
+           END-IF.
+       2020-READ-FILE-END.
+           GOBACK.

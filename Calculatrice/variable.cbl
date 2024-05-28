@@ -1,7 +1,7 @@
        FD BRAZIL
            RECORD VARYING FROM 24 TO 32 CHARACTERS
              DEPENDING ON data-name-bs
-             RECORDING MODE IS ?.
+             RECORDING MODE IS V.
 
        01 BRAZZIL
            03 FORTALEZA     PIC XXX.
